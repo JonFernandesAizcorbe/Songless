@@ -194,5 +194,4 @@ El proyecto solo se obtiene desde GitHub
 
 👨‍💻 Autor
 
-Proyecto desarrollado como parte del curso Python + IA
-Autor: Tu nombre aquí
+Autor: Jon Fernandes Aizcorbe
