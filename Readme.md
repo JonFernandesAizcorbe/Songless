@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="/static/favicon.png" alt="Song Game Banner" width="600">
-</p>
+
 
 # 🎵 Adivina la Canción — Song Game (FastAPI)
 
