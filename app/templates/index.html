@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adivina la Canción</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div id="container">
+
+  <h1>🎵 Powerless </h1>
+
+  <button id="startBtn">Empezar juego</button>
+
+  <!-- RONDA centrada debajo -->
+  <p id="roundText" style="display:none;">Ronda: <span id="round">1</span></p>
+
+  <div id="game" style="display:none;">
+
+      <div id="player"></div>
+
+        <div class="buttons-row">
+            <button id="playFragmentBtn">▶ Reproducir Fragmento</button>
+            <button id="skip-btn">⏭ Skip</button>
+        </div>
+
+      <div id="progress-container">
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+      </div>
+
+      <div class="autocomplete-container">
+        <input type="text" id="guess" placeholder="Escribe la canción">
+        <ul id="suggestions"></ul>
+      </div>
+
+      <div id="history"></div>
+  </div>
+
+</div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  const playlist = {{ playlist | tojson }};
+</script>
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>

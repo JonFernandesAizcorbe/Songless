@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;   /* centro horizontal */
+  align-items: center;       /* centro vertical */
+  background-color: #111;
+  color: white;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Título */
+h1 {
+  font-size: 2.5rem;
+}
+
+/* Botones */
+button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+/* Input */
+input {
+  width: 320px;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Juego */
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Barra de progreso */
+#progress-container {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  width: 250px;
+  margin: 10px auto;
+}
+
+.segment {
+  flex: 1;
+  height: 14px;
+  background-color: #333;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.segment-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #1db954;
+  transition: width 0.1s linear;
+}
+
+/* Autocomplete */
+.autocomplete-container {
+  position: relative;
+  width: 320px;
+}
+
+#suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #111;
+  border: 1px solid #333;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+#suggestions li {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid #333;
+}
+
+#suggestions li:hover {
+  background-color: #1db954;
+  color: black;
+}
+
+/* Historial */
+#history {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
