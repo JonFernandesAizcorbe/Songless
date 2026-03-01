@@ -82,7 +82,7 @@ Git: Clone
 4. Pega la URL del repositorio:
 
 ```bash
-https://github.com/USUARIO/NOMBRE_REPO.git
+https://github.com/JonFernandesAizcorbe/Songless
 ```
 
 5. Selecciona una carpeta
