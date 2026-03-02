@@ -122,8 +122,11 @@ uvicorn app.main:app --reload
 
 Abre tu navegador en:
 ```bash
-http://127.0.0.1:8000
+http://localhost:8000
 ```
+
+con 127.0.0.1:8000 no se reproduce los audios
+
 🎶 Cambiar la playlist de YouTube
 
 Abre el archivo:
